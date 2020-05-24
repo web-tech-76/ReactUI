@@ -3,7 +3,6 @@ import ApplicationHeader from "./Components/Header/ApplicationHeader";
 import LoginAppHeader from "./Components/Header/LoginAppHeader";
 import Routers from "./Components/Routers/Routers";
 
-
 function appheader(){
 
   return (
@@ -21,7 +20,6 @@ function appheader(){
 
 export default class App extends Component {
 
- 
    render() {
     let token = window.localStorage.getItem("token");
 
@@ -35,8 +33,6 @@ export default class App extends Component {
     else{
       header =loginheader();
     }  
-
-
     return (
         
         <Fragment>
